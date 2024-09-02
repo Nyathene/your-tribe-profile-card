@@ -12,7 +12,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: open sans;
-  color: #E0A4F4;
+  color: #F1D6FA;
 }
 
 article {
@@ -141,7 +141,7 @@ article > p {
   padding: 3rem 2rem;
   border-radius: 0 0 1rem 1rem;
   text-align: center;
-  background: rgba(105,0,105, 0.5);
+  background: rgba(105,0,105, 0.0);
 }
 
 /* expand content */
