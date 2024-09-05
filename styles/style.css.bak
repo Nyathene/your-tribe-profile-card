@@ -84,7 +84,7 @@ img {
 #profile img {
   position: relative;
   padding: 5em;
-  background: url(https://nyathene.github.io/your-tribe-profile-card/assets/creative-coder.png) no-repeat;
+  background: url(https://nyathene.github.io/your-tribe-profile-card/assets/Squad1G-Athene.JPG) no-repeat;
   background-size: 10em;
   
   top: 2rem;
@@ -96,7 +96,7 @@ img {
   transition: .25s .15s;
 }
 #profile img:hover {
-  background: url(https://media1.tenor.com/m/ABeVmJ3y2WQAAAAd/cat-dancing-meme-dancing.gif) no-repeat;
+  background: url(https://c.tenor.com/ABeVmJ3y2WQAAAAd/tenor.gif) no-repeat;
   background-size: 10em;
   position: relative;
   top: 2rem;
