@@ -62,6 +62,8 @@ article {
   width: 80%;
   background-color: #F1D6FA95;
   height: 300px;
+  z-index: -1;
+  position: relative;
 }
 
 section::after {
