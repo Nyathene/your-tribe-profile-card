@@ -1,93 +1,86 @@
+<style>
 * {
   box-sizing: border-box;
 }
 
-html {
-  height: 100vh;
+@media (max-aspect-ratio: 9/16) {
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://64.media.tumblr.com/6f2206f3971ef3272ecaa8ce71d8f21e/tumblr_nuk6bbmkJb1smn4pqo5_1280.png");
+  background-size: 130% auto ;
+  }
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: open sans;
-  color: #F1D6FA;
-}
-
-article {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  width: 50vw;
-  max-width: 25em;
-  min-width: 20em;
-  border-radius: 1rem;
-  background: rgb(74,18,37);
-  background: linear-gradient(0deg, rgba(74,18,37,1) 60%, #420A55 100%);
-  box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
-  transition: .25s;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://64.media.tumblr.com/6f2206f3971ef3272ecaa8ce71d8f21e/tumblr_nuk6bbmkJb1smn4pqo5_1280.png");
+  background-size: auto 130%;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  color: #F1D6FA95;
+  background-color: #b00b69;
+  background: rgb(66, 10, 85);
+  background: linear-gradient(0deg, #4A1225 20%, rgb(66, 10, 85) 100%);
+  padding: 0.625em; 
+  text-align: right;
+  font-size: 35px;
+  color: white;
 }
 
-h1 {
-  margin: 2rem 0 1rem;
-  color: rgba(200,100,15,1);
+#content{
+	position: relative;
+	padding: 10% ;
+	}
+	
+#bar {
+  background: rgb(66, 10, 85);
+  background: linear-gradient(0deg, #b00b6999 5%, #4A1225 20%);
+  float: left;
+  width: 20%;
+  height: 300px;
+  padding: 0em;
+}
+nav {
+	position: absolute;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	padding-left: 20%;
+	transform: translateY(-50%);
+}
+a{
+	color: white;
+	}
+a:visited{
+	color: white;
+	}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #F1D6FA95;
+  height: 300px;
 }
 
-button {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: .25rem;
-  border: none;
-  border-radius: 50%;
-  background: rgba(0,239,255,1);
-  transform: scale(.8);
-  transition: .25s;
-}
-button:focus {
-  outline: none;
-  background: #202592;
-}
-button:focus svg {
-  stroke: rgba(0,239,255,1);
+section::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-svg {
-  position: absolute;
-  top: calc(1.25rem - 12px);
-  left: calc(1.25rem - 12px);
-  stroke: #4e54c8;
-  transition-delay: .25s;
-}
-button svg:nth-of-type(2) {
-  opacity: 0;
-  transition-delay: 0ms;
-}
-
-img {
-  height: .75em;
-  width: auto;
-  }
+#profile {
+	padding: 1.25em;
+	position: absolute;
+	}
 #profile img {
   position: relative;
-  padding: 5em;
   background: url(https://nyathene.github.io/your-tribe-profile-card/assets/Squad1G-Athene.JPG) no-repeat;
   background-size: 10em;
   
-  top: 2rem;
+  top: 0rem;
   width: 10em;
   height: auto;
   border: 5px solid #fff;
@@ -98,98 +91,6 @@ img {
 #profile img:hover {
   background: url(https://nyathene.github.io/your-tribe-profile-card/assets/Katdans.gif) no-repeat;
   background-size: 10em;
-  position: relative;
-  top: 2rem;
-  width: 10em;
-  height: auto;
-  border: 5px solid #fff;
-  border-radius: 10em;
-  box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
-  transition: .25s .15s;
 }
 
-
-
-dl {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "html-dd css-dd js-dd"
-    "html-dt css-dt js-dt"
-    ;
-  justify-items: center;
-  align-items: start;
-  width: 100%;
-  margin-top: 0rem;
-  margin-bottom: 0;
-  padding: 5rem 0 3rem;
-  text-align: center;
-  background: rgb(74, 18, 37);
-}
-
-dt {
-  margin-top: .25rem;
-  padding-top: .25rem;
-  border-top: 1px solid rgba(0,0,0,0.3);
-  font-weight: bold;
-}
-dt:nth-of-type(1) {
-  grid-area: html-dt;
-}
-dt:nth-of-type(2) {
-  grid-area: css-dt;
-  transform: translateY(1rem);
-}
-dt:nth-of-type(3) {
-  grid-area: js-dt;
-}
-
-dd {
-  margin: 0;
-  padding-left: .3rem;
-  transition: .25s .3s;
-}
-dd:nth-of-type(2){  
-  transform: translateY(1rem);
-}
-
-p { 
-  margin: 0;
-}
-
-article > p {
-  width: 100%;
-  margin-top: 0;
-  padding: 3rem 2rem;
-  border-radius: 0 0 1rem 1rem;
-  text-align: center;
-  background: rgba(105,0,105, 0.0);
-}
-
-/* expand content */
-body.expand {
-  font-size: 1.15em;
-}
-
-body.expand article {
-  width: 60vw;
-  max-width: 60vw;
-}
-
-body.expand button svg:first-of-type {
-  opacity: 0;
-  transition-delay: 0ms;
-}
-
-body.expand button svg:nth-of-type(2) {
-  opacity: 1;
-  transition-delay: .25s;
-}
-
-body.expand dd {
-  font-size: 1.75em;
-}
-
-body.expand img {
-  width: 15em;
-}
+</style>

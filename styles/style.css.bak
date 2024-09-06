@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -21,12 +22,11 @@ article {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  width: 50vw;
-  max-width: 25em;
-  min-width: 20em;
+  width: 25em;
+  height: 32.5em;
   border-radius: 1rem;
-  background: rgb(74,18,37);
-  background: linear-gradient(0deg, rgba(74,18,37,1) 60%, #420A55 100%);
+  background: #4A1225;
+  background: linear-gradient(0deg, #4A1225 60%, rgb(66, 10, 85) 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
 }
@@ -83,7 +83,6 @@ img {
   }
 #profile img {
   position: relative;
-  padding: 5em;
   background: url(https://nyathene.github.io/your-tribe-profile-card/assets/Squad1G-Athene.JPG) no-repeat;
   background-size: 10em;
   
@@ -96,7 +95,7 @@ img {
   transition: .25s .15s;
 }
 #profile img:hover {
-  background: url(https://c.tenor.com/ABeVmJ3y2WQAAAAd/tenor.gif) no-repeat;
+  background: url(https://nyathene.github.io/your-tribe-profile-card/assets/Katdans.gif) no-repeat;
   background-size: 10em;
   position: relative;
   top: 2rem;
@@ -166,7 +165,6 @@ article > p {
   background: rgba(105,0,105, 0.0);
 }
 
-/* expand content */
 body.expand {
   font-size: 1.15em;
 }
@@ -192,4 +190,13 @@ body.expand dd {
 
 body.expand img {
   width: 15em;
+}
+
+#bar {
+  background: rgb(66, 10, 85);
+  background: linear-gradient(0deg, #b00b6999 5%, #4A1225 20%);
+  float: left;
+  width: 20%;
+  height: 300px;
+  padding: 0em;
 }

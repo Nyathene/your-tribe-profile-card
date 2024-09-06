@@ -1,61 +1,144 @@
 <!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FDND Visitekaartje</title>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    
-    <article>
-      
-      <header>
-        
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <title>Wijzig layout</title>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M15 5v2a2 2 0 0 0 2 2h2"></path> 
-            <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-        </button>
-		<audio src="/assets/metal pipe.mp3"></audio>
+<html lang="en">
+<head>
+<title>Visitekaart</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+@media (max-aspect-ratio: 9/16) {
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://64.media.tumblr.com/6f2206f3971ef3272ecaa8ce71d8f21e/tumblr_nuk6bbmkJb1smn4pqo5_1280.png");
+  background-size: 130% auto ;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://64.media.tumblr.com/6f2206f3971ef3272ecaa8ce71d8f21e/tumblr_nuk6bbmkJb1smn4pqo5_1280.png");
+  background-size: auto 130%;
+}
+
+/* Style the header */
+header {
+  color: #F1D6FA95;
+  background-color: #b00b69;
+  background: rgb(66, 10, 85);
+  background: linear-gradient(0deg, #4A1225 20%, rgb(66, 10, 85) 100%);
+  padding: 0.625em; 
+  text-align: right;
+  font-size: 35px;
+  color: white;
+}
+/* Style the "content" */
+#content{
+	position: relative;
+	padding: 10% ;
+	}
+/* Create two columns/boxes that floats next to each other */
+#bar {
+  background: rgb(66, 10, 85);
+  background: linear-gradient(0deg, #b00b6999 5%, #4A1225 20%);
+  float: left;
+  width: 20%;
+  height: 300px;
+  padding: 0em;
+}
+nav {
+	position: absolute;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	padding-left: 20%;
+	transform: translateY(-50%);
+}
+a{
+	color: white;
+	}
+a:visited{
+	color: white;
+	}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #F1D6FA95;
+  height: 300px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#profile {
+	padding: 1.25em;
+	position: absolute;
+	}
+#profile img {
+  position: relative;
+  background: url(https://nyathene.github.io/your-tribe-profile-card/assets/Squad1G-Athene.JPG) no-repeat;
+  background-size: 10em;
+  
+  top: 0rem;
+  width: 10em;
+  height: auto;
+  border: 5px solid #fff;
+  border-radius: 10em;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+  transition: .25s .15s;
+}
+#profile img:hover {
+  background: url(https://nyathene.github.io/your-tribe-profile-card/assets/Katdans.gif) no-repeat;
+  background-size: 10em;
+}
+
+</style>
+</head>
+<body>
+
+<div id=content>
 
         <div id=profile>
       <img src="" alt="" width="800" height="800">
-        <div><h1>Athene Guanipa</h1>
-        
-        <p><em>Eepy</em></p></div>
-        
-</div>
-      </header>
+		</div>
+<header>
+  <h2>Athene Guanipa</h2>
+</header>
 
-      <dl>
-        <dt>Haken</dt>
-        <dd>🧶🧶🧶🧶</dd>
-        
-        <dt>Saxofoon</dt>
-        <dd>🎷</dd>
-        
-        <dt>Leeftijd</dt>
-        <dd>2️⃣0️⃣</dd>
-      </dl>
-  
-      <p>Geboren in 2003 in NL <img src="assets/NL Flag Pixel Arts.png" height="1.5em"> <br> in 2008 verhuisd naar Curaçao <img src="assets/Cura Flag Pixel Arts.png" height="1.5em"> <br> in 2022 terug verhuisd naar NL <img src="assets/NL Flag Pixel Arts.png" height="1.5em"> 	 </p>
+<section>
+  <section  id=bar>
+  </section>
+ <nav>
+	<ul>
+		<a href="#Skills"><button>Skills</button></a>
+		<a href="#Hobby"><button>Hobby's</button></a>
+		<a href="#afkomst"><button>Afkomst</button></a>
+ </nav>
+  <article style="overflow-y:scroll;">
+	<br><h2 id=Skills>Skills</h2>
+	<p>Muziek</p>
+	<p>Microsoft Office (ondanks dat ik die programma's niet heel fijn vind)</p><br>
+    <br><h2 id=Hobby>Hobby's</h2>
+    <p>Haken / crochet</p>
+	<img src="assets/Crochet.png" alt="Amogus" width="auto" height="200">
+	<img src="assets/Meowboy Hat.png" alt="Cowboy hoed met kattenoortjes" width="auto" height="200"><br>
+	<p>Visuele kunst</p>
+	<img src="assets/Shark painting.jpg" alt="Schilderij van twee haaien" width="auto" height="200"><br>
+    <p>Saxofoon</p><br>
+	
+	<br><h2 id=afkomst>Afkomst</h2>
+      <p>Geboren in 2003 in NL <img src="assets/NL Flag Pixel Arts.png" height="15em">, met een Surinaamse <img src="assets/Su Flag Pixel Arts.png" height="15em"> moeder en een Curaçaosche <img src="assets/Cura Flag Pixel Arts.png" height="15em"> vader.<br> in 2008 verhuisd naar Curaçao <img src="assets/Cura Flag Pixel Arts.png" height="15em"> <br> in 2022 terug verhuisd naar NL <img src="assets/NL Flag Pixel Arts.png" height="15em"> 	 </p>
       
-    </article>
-
-    <script src="scripts/script.js"></script>
-    
-  </body>
+  </article>
+</section>
+</div>
+</body>
 </html>
+
